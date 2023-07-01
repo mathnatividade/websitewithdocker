@@ -1,0 +1,43 @@
+version: '3.7'
+
+services:
+  web:
+    image: webdevops/php-apache:alpine-php7
+    ports:
+      - "80:80"
+    volumes:
+      - ./site/archives:/app
+    restart: always
+    networks:
+      - rede1
+  
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: "SuaSenha@123"
+      MYSQL_DATABASE: "production"
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./site/db:/var/lib/mysql
+      - ./db-start:/docker-entrypoint-initdb.d
+      
+    restart: always
+    networks:
+      - rede1
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      MYSQL_ROOT_PASSWORD: "SuaSenha@123"
+    ports:
+      - "8080:80"
+    volumes:
+      - ./site/admin/uploads.ini:/usr/local/etc/php/conf.d/php-phpmyadmin.ini
+    restart: always
+    networks:
+      - rede1
+
+networks:
+  rede1:
+    driver: bridge
