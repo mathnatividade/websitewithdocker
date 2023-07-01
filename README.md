@@ -14,25 +14,31 @@ Antes de começar, certifique-se de ter os seguintes requisitos instalados em se
 ## Primeiros Passos
 
 1. Clone este repositório para sua máquina local.
+```console
 git clone https://github.com/mathnatividade/websitewithdocker.git
 cd websitewithdocker
+```
 
 2. Personalize a Configuração (Opcional)
 Você pode modificar o arquivo docker-compose.yml para atender às suas necessidades específicas. Por exemplo, você pode alterar a senha root do MySQL, o nome do banco de dados e outras configurações.
 
 3. Inicie o Ambiente de Desenvolvimento
 Para iniciar o ambiente de desenvolvimento web, execute o seguinte comando no diretório raiz do repositório clonado:
-docker-compose up -d
+```console
+docker compose up -d
+```
 
 4. Acessando os Serviços
 Assim que o ambiente estiver em execução, você poderá acessar os seguintes serviços:
 
-    Servidor Web: Acesse sua aplicação web PHP visitando http://localhost:80 em seu navegador.
-    PHPMyAdmin: Gerencie seu banco de dados MySQL por meio do PHPMyAdmin visitando http://localhost:8080 em seu navegador.
+    - Servidor Web: Acesse sua aplicação web PHP visitando http://localhost:80 em seu navegador.
+    - PHPMyAdmin: Gerencie seu banco de dados MySQL por meio do PHPMyAdmin visitando http://localhost:8080 em seu navegador.
 
 5. Parando o Ambiente
 Para parar e remover os contêineres sem excluir os volumes de dados, utilize o seguinte comando:
-docker-compose down
+```console
+docker compose down
+```
 
 ## Serviços
 ### Servidor Web (web)
