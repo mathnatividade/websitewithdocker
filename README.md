@@ -14,7 +14,7 @@ Antes de começar, certifique-se de ter os seguintes requisitos instalados em se
 ## Primeiros Passos
 
 1. Clone este repositório para sua máquina local.
-```console
+```bash
 git clone https://github.com/mathnatividade/websitewithdocker.git
 cd websitewithdocker
 ```
@@ -24,7 +24,7 @@ cd websitewithdocker
 
 3. Inicie o Ambiente de Desenvolvimento
 - Para iniciar o ambiente de desenvolvimento web, execute o seguinte comando no diretório raiz do repositório clonado:
-```console
+```bash
 docker compose up -d
 ```
 
@@ -35,7 +35,7 @@ docker compose up -d
 
 5. Parando o Ambiente
 - Para parar e remover os contêineres sem excluir os volumes de dados, utilize o seguinte comando:
-```console
+```bash
 docker compose down
 ```
 
