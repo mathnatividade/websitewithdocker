@@ -1,6 +1,7 @@
 # Configuração do Docker Compose para Ambiente de Desenvolvimento Web
 
 [![GitHub stars](https://img.shields.io/github/stars/mathnatividade/websitewithdocker.svg?style=social)](https://github.com/mathnatividade/websitewithdocker)
+[<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/matheusnatividade/)
 
 Este repositório contém uma configuração do Docker Compose que cria um ambiente de desenvolvimento web completo. Inclui um servidor PHP com Apache, um banco de dados MySQL e uma interface PHPMyAdmin para facilitar a administração do banco de dados. Essa configuração permite iniciar rapidamente projetos de desenvolvimento web sem se preocupar com instalações e configurações individuais.
 
